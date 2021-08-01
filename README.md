@@ -165,7 +165,7 @@ central-sg-id = "sg-0bbc1232acab19881"
 north-sg-id = "sg-036698a475b097f55"
 ```
 
-* Confirm the SGs has been created
+* Confirm the SGs have been created
 
 ```
 aws ec2 describe-security-groups --filter --group-ids $(terraform output -raw central-sg-id) --region=eu-central-1
