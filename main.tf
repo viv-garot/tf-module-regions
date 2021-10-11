@@ -9,14 +9,14 @@ provider "aws" {
 }
 
 module "ec2-instance-central" {
-  source = "github.com/viv-garot/sg-aws"
+  source = "git@github.com:viv-garot/sg-aws"
   providers = {
     aws = aws.central
   }
 }
 
 module "ec2-instance-north" {
-  source = "github.com/viv-garot/sg-aws"
+  source = "git@github.com:viv-garot/sg-aws"
   providers = {
     aws = aws.north
   }
